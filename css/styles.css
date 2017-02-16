@@ -56,44 +56,35 @@ code {
 }
 
 .navbar-inverse .navbar-nav>li>a.active {
--  color: #3effa7;
--}*/
--.navbar-nav li a {
--  color: #3effa7;
--  font-size: 30px;
--  padding-bottom: 15px;
--  line-height: 30px;
--}
--
--.navbar-nav li a:hover {
--  background-color: transparent;
--  color: #ff3e96;
--  cursor: pointer;
--}
--
--.navbar-nav li a:focus {
--  background-color: transparent;
--}
--
--.navbar-toggle {
--  background-color:  transparent;
--  border: 2px solid #fff;
--  margin-right: 20px;
-+  color: #fff;
+color: #3effa7;
+}
+.navbar-nav li a {
+ color: #3effa7;
+  font-size: 30px;
+ padding-bottom: 15px;
+ line-height: 30px;
+}
+.navbar-nav li a:hover {
+ background-color: transparent;
+ color: #ff3e96;
+  cursor: pointer;
+}
+.navbar-nav li a:focus {
+ background-color: transparent;
+}
+.navbar-toggle {
+ background-color:  transparent;
+ border: 2px solid #fff;
+ margin-right: 20px;
+ color: #fff;
+}
+span.icon-bar {
+ background-color: #fff;
 }
 
--span.icon-bar {
--  background-color: #fff;
--}
-+@media (min-width: 768px) {
-+  .navbar {
-+    border-radius: 0;
-+    min-height: 40px;
-+  }
-
--.navbar-toggle .icon-bar+.icon-bar {
--  background-color: #fff;
--}
+.navbar-toggle .icon-bar+.icon-bar {
+ background-color: #fff;
+}
  /** The following may need modification depending on
      the size of your `navbar-brand` (if enabled) */
  #main-menu-navbar {
@@ -101,29 +92,25 @@ code {
  }
  .navbar-nav>li>a {
    padding-top: 10px;
--    color: #3effa7;
--    font-size: 30px;
--    padding-bottom: 15px;
--    line-height: 30px;
-+    padding-bottom: 10px;
+   color: #3effa7;
+   font-size: 30px;
+    padding-bottom: 15px;
+   line-height: 30px;
+   padding-bottom: 10px;
  }
--
--  /*** Turn the hamburger to an x ***/
--.navbar-toggle {
--  border: none;
--  background: transparent !important;
--}
--
--.navbar-toggle:hover {
--  background: transparent !important;
--}
--
--.navbar-toggle .icon-bar {
--  width: 22px;
--  transition: all 0.2s;
--}
--
--.navbar-toggle .top-bar {
+  /*** Turn the hamburger to an x ***/
+.navbar-toggle {
+  border: none;
+ background: transparent !important;
+}
+.navbar-toggle:hover {
+ background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+ transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
 -  transform: rotate(45deg);
 -  transform-origin: 10% 10%;
 -}
