@@ -23,6 +23,7 @@ a.sidebar-module-list-link {
 
 .sidebar-module-list-count {
   padding-left: 5px;
+  color: #ff3e96;
 }
 .sidebar-module-list-count:before { content: "("; }
 .sidebar-module-list-count:after { content: ")"; }
@@ -846,7 +847,7 @@ span.icon-bar {
 
 .blog-footer {
   padding: 40px 0;
-  color: #999;
+  color: #590059;
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
