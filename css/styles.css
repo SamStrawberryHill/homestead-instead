@@ -542,7 +542,7 @@ code {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
-
+/*
 .navbar-inverse { border: 0; }
 
 .navbar-inverse .navbar-toggle {
@@ -570,8 +570,37 @@ code {
 
 .navbar-inverse .navbar-nav>li>a.active {
   color: #3effa7;
+}*/
+.navbar-nav li a {
+  color: #3effa7;
+  font-size: 30px;
+  padding-bottom: 15px;
+  line-height: 30px;
 }
 
+.navbar-nav li a:hover {
+  background-color: transparent;
+  color: #ff3e96;
+  cursor: pointer;
+}
+
+.navbar-nav li a:focus {
+  background-color: transparent;
+}
+
+.navbar-toggle {
+  background-color:  transparent;
+  border: 2px solid #fff;
+  margin-right: 20px;
+}
+
+span.icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  background-color: #fff;
+}
   /** The following may need modification depending on
       the size of your `navbar-brand` (if enabled) */
   #main-menu-navbar {
