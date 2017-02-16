@@ -29,9 +29,7 @@ a.sidebar-module-list-link {
  padding-left: 5px;
  color: #ff3e96;
 }
-.sidebar-module-list-count:before { content: "("; }
-.sidebar-module-list-count:after { content: ")"; }
-a.sidebar-module-list-link {
+
 /* Globals */
 
 body {
