@@ -15,72 +15,44 @@
 .right, .alignright {
   float: right;
 }
-float: right;
+
+a {
+ color: #ff3e96;
 }
 
--a {
--  color: #ff3e96;
--}
 /* Sidebar */
 a.sidebar-module-list-link {
--  color: #ff3e96;
--}
+ color: #ff3e96;
+}
 
 .sidebar-module-list-count {
  padding-left: 5px;
--  color: #ff3e96;
+ color: #ff3e96;
 }
 .sidebar-module-list-count:before { content: "("; }
 .sidebar-module-list-count:after { content: ")"; }
-@@ -496,9 +489,8 @@ a.sidebar-module-list-link {
+a.sidebar-module-list-link {
 /* Globals */
 
 body {
--  /*font-family: Georgia, "Times New Roman", Times, serif;*/
-+  font-family: Georgia, "Times New Roman", Times, serif;
- color: #555;
--  background: url('/homestead-instead/css/images/edit2.jpg');
+font-family: Georgia, "Times New Roman", Times, serif;
+color: #555;
+background: url('/homestead-instead/css/images/edit2.jpg');
 }
 
-h1, .h1,
-@@ -537,12 +529,35 @@ code {
+code {
  border-radius: 30px;
 }
 
-+/* Override Bootstrap's default container width */
-+@media (min-width: 1200px) {
-+  .container {
-+    width: 970px;
-+  }
-+}
-+
 /*
 * Masthead for nav
 */
 
 .navbar {
--  background-color: rgba(109,123,255,0.9);
-+  background-color: #428bca;
-+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-+}
-+
-+.navbar-inverse { border: 0; }
-+
-+.navbar-inverse .navbar-toggle {
-+  border-color: #cdddeb;
-+}
-+.navbar-inverse .navbar-toggle .icon-bar {
-+  background-color: #cdddeb;
-+}
-+
-+.navbar-inverse .navbar-toggle:focus,
-+.navbar-inverse .navbar-toggle:hover {
-+  background-color: #65A2D6;
-}
-
-.navbar-inverse .navbar-brand,
-@@ -557,91 +572,24 @@ code {
+ background-color: rgba(109,123,255,0.9);
+ background-color: #428bca;
+ -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+         box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
 
 .navbar-inverse .navbar-nav>li>a.active {
@@ -299,68 +271,64 @@ h1, .h1,
  text-decoration: underline;
 }
 
-@@ -872,137 +779,12 @@ span.icon-bar {
+span.icon-bar {}
 
 .blog-footer {
  padding: 40px 0;
--  color: #590059;
-+  color: #999;
+ color: #590059;
+ color: #999;
  text-align: center;
  background-color: #f9f9f9;
  border-top: 1px solid #e5e5e5;
--  background: url('/homestead-instead/css/images/rainbowbackground.jpg');
--  position: absolute;
--  width: 100%;
+ background: url('/homestead-instead/css/images/rainbowbackground.jpg');
+ position: absolute;
+ width: 100%;
 }
 .blog-footer p:last-child {
  margin-bottom: 0;
 }
--/************** Social Media Icons ****************/
--.soc {
--  display: block;
--  font-size: 0;
--  list-style: none;
--  padding: 0;
--}
--
--.soc li {
--  display: inline-block;
--  margin: 12px;
--  margin: 1.2rem;
--}
+/************** Social Media Icons ****************/
+.soc {
+ display: block;
+ font-size: 0;
+ list-style: none;
+ padding: 0;
+}
+.soc li {
+ display: inline-block;
+  margin: 12px;
+ margin: 1.2rem;
+}
 
--ul.soc {
--  margin-left: 25px;
--  margin-right: auto;
--}
--.soc a, .soc svg {
--  display: block;
--}
--
--.soc a {
+ul.soc {
+ margin-left: 25px;
+ margin-right: auto;
+}
+.soc a, .soc svg {
+ display: block;
+}
+.soc a {
 -  position: relative;
 -  height: 6rem;
 -  width: 6rem;
 -}
--
--.soc svg {
+.soc svg {
 -  height: 80%;
 -  width: 80%;
 -}
--
--.icon-13:hover,
--.icon-26:hover,
--.icon-17:hover {
--  border-radius: 100%;
--  color: rgba(109,123,255, 0.5);
--  fill: rgba(109,123,255, 0.5);
--  -webkit-transform: scale(1.25);
--          transform: scale(1.25);
--  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
--  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
--  transition: background-color 0.5s, transform 0.5s ease-out;
--  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
--}
+.icon-13:hover,
+.icon-26:hover,
+.icon-17:hover {
+ border-radius: 100%;
+ color: rgba(109,123,255, 0.5);
+ fill: rgba(109,123,255, 0.5);
+ -webkit-transform: scale(1.25);
+         transform: scale(1.25);
+ -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+ transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+ transition: background-color 0.5s, transform 0.5s ease-out;
+ transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
 .icon-13 {
  color: #26d991;
   fill: #26d991;
