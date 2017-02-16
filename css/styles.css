@@ -506,9 +506,14 @@ h6, .h6 {
   color: #333;
 }
 
-/*p {
+p {
   margin: 0 0 15px;
-}*/
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #ffb482;
+  line-height: 30px;
+  font-family: 'Pacifico', cursive;
+}
 
 code {
   background-color: #eeeeee;
