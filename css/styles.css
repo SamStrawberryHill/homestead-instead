@@ -695,6 +695,8 @@ span.icon-bar {
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
+  background: url('/homestead-instead/css/images/rainbowbackground.jpg');
+
 }
 .blog-main > article:last-of-type {
   margin-bottom: 30px;
@@ -788,11 +790,11 @@ span.icon-bar {
   clear: both;
 }
 .article-footer a {
-  color: #999;
+  color: #3effa7;
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #666;
+  color: #ff3e96;
   text-decoration: underline;
 }
 
