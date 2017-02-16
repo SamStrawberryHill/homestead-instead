@@ -16,6 +16,9 @@
   float: right;
 }
 
+a {
+  color: #ff3e96;
+}
 /* Sidebar */
 a.sidebar-module-list-link {
   color: #ff3e96;
@@ -699,6 +702,17 @@ span.icon-bar {
   background: url('/homestead-instead/css/images/rainbowbackground.jpg');
   border-radius: 3px;
 }
+
+.blog-main:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
+  text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
+
 .blog-main > article:last-of-type {
   margin-bottom: 30px;
 }
