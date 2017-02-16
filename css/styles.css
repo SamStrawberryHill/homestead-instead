@@ -489,7 +489,7 @@
 /* Globals */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
   color: #555;
 }
 
@@ -527,13 +527,6 @@ code {
 }
 .nav-pills>li>a {
   border-radius: 30px;
-}
-
-/* Override Bootstrap's default container width */
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
 }
 
 /*
@@ -574,12 +567,6 @@ code {
 .navbar-inverse .navbar-nav>li>a.active {
   color: #fff;
 }
-
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 0;
-    min-height: 40px;
-  }
 
   /** The following may need modification depending on
       the size of your `navbar-brand` (if enabled) */
@@ -849,3 +836,17 @@ code {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/***************** Media Queries *********************/
+/* Override Bootstrap's default container width */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+    min-height: 40px;
+  }
