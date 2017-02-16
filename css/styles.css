@@ -836,3 +836,6 @@ code {
     border-radius: 0;
     min-height: 40px;
   }
+  .blog-footer {
+    bottom: 0;
+  }
