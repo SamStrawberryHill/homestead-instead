@@ -648,6 +648,8 @@ code {
   margin-bottom: 0;
   font-size: 60px;
   font-weight: normal;
+  font-family: 'Pacifico', cursive;
+  color: #ffb482;
 }
 .blog-description {
   font-size: 20px;
