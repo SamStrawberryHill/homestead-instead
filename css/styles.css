@@ -645,7 +645,7 @@ code {
 }
 .blog-title {
   margin-top: 30px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-size: 55px;
   font-weight: normal;
   font-family: 'Pacifico', cursive;
@@ -817,7 +817,6 @@ code {
   border-top: 1px solid #e5e5e5;
   background: url('/homestead-instead/css/images/rainbowbackground.jpg');
   position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .blog-footer p:last-child {
