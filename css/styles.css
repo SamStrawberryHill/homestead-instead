@@ -596,7 +596,10 @@ span.icon-bar {
   }
   .navbar-nav>li>a {
     padding-top: 10px;
-    padding-bottom: 10px;
+    color: #3effa7;
+    font-size: 30px;
+    padding-bottom: 15px;
+    line-height: 30px;
   }
 
   /*** Turn the hamburger to an x ***/
