@@ -582,6 +582,7 @@ code {
     font-size: 15px;
     color: #ffb482;
     font-family: 'Pacifico', cursive;
+    float: left;
   }
 
   h2.branderoo:hover,
