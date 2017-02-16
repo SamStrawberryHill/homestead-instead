@@ -855,6 +855,63 @@ span.icon-bar {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+/************** Social Media Icons ****************/
+.soc a, .soc svg {
+  display: block;
+}
+
+.soc a {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+}
+
+.soc svg {
+  height: 80%;
+  width: 80%;
+}
+
+.icon-13:hover,
+.icon-26:hover,
+.icon-17:hover {
+  border-radius: 100%;
+  color: rgba(109,123,255, 0.5);
+  fill: rgba(109,123,255, 0.5);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.icon-13 {
+  color: #26d991;
+  fill: #26d991;
+}
+
+.icon-13:hover {
+  background: #26d991;
+}
+
+.icon-17 {
+  color: #eec273;
+  fill: #eec273;
+}
+
+.icon-17:hover {
+  background: #eec273;
+}
+
+.icon-26 {
+  color: #d926b5;
+  fill: #d926b5;
+}
+
+.icon-26:hover {
+  background: #d926b5;
+}
+
 
 /***************** Media Queries *********************/
 /* Override Bootstrap's default container width */
@@ -874,6 +931,7 @@ span.icon-bar {
   }
   .blog-title {
     font-size: 40px;
+    padding-top: 30px;
   }
   .blog-footer {
     bottom: 0;
