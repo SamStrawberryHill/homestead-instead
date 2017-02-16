@@ -726,6 +726,7 @@ span.icon-bar {
   margin-top: 0;
   margin-bottom: 10px;
   color: #ff7619;
+  font-family: 'Pacifico', cursive;
 }
 .sidebar-module-inset {
   padding: 15px;
