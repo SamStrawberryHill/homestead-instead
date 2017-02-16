@@ -16,17 +16,10 @@
   float: right;
 }
 
-a {
-  color: #ff3e96;
-}
 /* Sidebar */
-a.sidebar-module-list-link {
-  color: #ff3e96;
-}
 
 .sidebar-module-list-count {
   padding-left: 5px;
-  color: #ff3e96;
 }
 .sidebar-module-list-count:before { content: "("; }
 .sidebar-module-list-count:after { content: ")"; }
@@ -496,9 +489,8 @@ a.sidebar-module-list-link {
 /* Globals */
 
 body {
-  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
-  background: url('/homestead-instead/css/images/edit2.jpg');
 }
 
 h1, .h1,
@@ -537,12 +529,35 @@ code {
   border-radius: 30px;
 }
 
+/* Override Bootstrap's default container width */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
 /*
  * Masthead for nav
  */
 
 .navbar {
-  background-color: rgba(109,123,255,0.9);
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.navbar-inverse { border: 0; }
+
+.navbar-inverse .navbar-toggle {
+  border-color: #cdddeb;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #cdddeb;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #65A2D6;
 }
 
 .navbar-inverse .navbar-brand,
@@ -557,38 +572,15 @@ code {
 }
 
 .navbar-inverse .navbar-nav>li>a.active {
-  color: #3effa7;
-}*/
-.navbar-nav li a {
-  color: #3effa7;
-  font-size: 30px;
-  padding-bottom: 15px;
-  line-height: 30px;
+  color: #fff;
 }
 
-.navbar-nav li a:hover {
-  background-color: transparent;
-  color: #ff3e96;
-  cursor: pointer;
-}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+    min-height: 40px;
+  }
 
-.navbar-nav li a:focus {
-  background-color: transparent;
-}
-
-.navbar-toggle {
-  background-color:  transparent;
-  border: 2px solid #fff;
-  margin-right: 20px;
-}
-
-span.icon-bar {
-  background-color: #fff;
-}
-
-.navbar-toggle .icon-bar+.icon-bar {
-  background-color: #fff;
-}
   /** The following may need modification depending on
       the size of your `navbar-brand` (if enabled) */
   #main-menu-navbar {
@@ -596,52 +588,8 @@ span.icon-bar {
   }
   .navbar-nav>li>a {
     padding-top: 10px;
-    color: #3effa7;
-    font-size: 30px;
-    padding-bottom: 15px;
-    line-height: 30px;
+    padding-bottom: 10px;
   }
-
-  /*** Turn the hamburger to an x ***/
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
-}
-
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-
-.navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
-}
-
-.navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-
-.navbar-toggle .middle-bar {
-  opacity: 0;
-}
-
-.navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
-}
-
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
-}
-
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
-}
   /** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
   .navbar-inverse .navbar-nav>li>a.active:after {
@@ -658,26 +606,6 @@ span.icon-bar {
     border-left: 5px solid transparent;
   }
 }
-/********** Alchemy Symbols ************/
-.row.alchemySymbol {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.alchemy {
-  height: 30px;
-  width: 30px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
-}
-
-.alchemy:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
 
 /*
  * Blog header and description
@@ -687,12 +615,10 @@ span.icon-bar {
   padding-bottom: 20px;
 }
 .blog-title {
-  margin-top: 60px;
-  margin-bottom: 20px;
-  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
   font-weight: normal;
-  font-family: 'Pacifico', cursive;
-  color: #ff7619;
 }
 .blog-description {
   font-size: 20px;
@@ -706,21 +632,7 @@ span.icon-bar {
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
-  background: url('/homestead-instead/css/images/rainbowbackground.jpg');
-  border-radius: 3px;
-  margin: 5px 5px 5px;
 }
-
-.blog-main:hover {
-  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
-  text-decoration: none;
-  -webkit-transition: 500ms linear 0s;
-  -moz-transition: 500ms linear 0s;
-  -o-transition: 500ms linear 0s;
-  transition: 500ms linear 0s;
-  outline: 0 none;
-}
-
 .blog-main > article:last-of-type {
   margin-bottom: 30px;
 }
@@ -733,21 +645,16 @@ span.icon-bar {
 .sidebar-module h4 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #ff7619;
-  font-family: 'Pacifico', cursive;
-  font-size: 25px;
 }
 .sidebar-module-inset {
   padding: 15px;
-  background-color: rgba(109,123,255,0.9);
+  background-color: #f5f5f5;
   border-radius: 4px;
-  margin: 5px 5px;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
-  color: #3effa7;
 }
 
 .sidebar-module-list {
@@ -772,7 +679,7 @@ span.icon-bar {
   margin-bottom: 5px;
 }
 .article-header h1 a {
-  color: #3effa7;
+  color: #333;
 }
 .article-header h1 a:hover {
   color: #23527c;
@@ -781,7 +688,7 @@ span.icon-bar {
 
 .article-meta {
   margin-bottom: 20px;
-  color: #ff3e96;
+  color: #999;
   font-size: 0.9em;
 }
 .article-meta > * {
@@ -816,11 +723,11 @@ span.icon-bar {
   clear: both;
 }
 .article-footer a {
-  color: #590059;
+  color: #999;
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #ff3e96;
+  color: #666;
   text-decoration: underline;
 }
 
@@ -872,137 +779,12 @@ span.icon-bar {
 
 .blog-footer {
   padding: 40px 0;
-  color: #590059;
+  color: #999;
   text-align: center;
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
-  background: url('/homestead-instead/css/images/rainbowbackground.jpg');
-  position: absolute;
-  width: 100%;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
-/************** Social Media Icons ****************/
-.soc {
-  display: block;
-  font-size: 0;
-  list-style: none;
-  padding: 0;
-}
 
-.soc li {
-  display: inline-block;
-  margin: 12px;
-  margin: 1.2rem;
-}
-
-ul.soc {
-  margin-left: 25px;
-  margin-right: auto;
-}
-.soc a, .soc svg {
-  display: block;
-}
-
-.soc a {
-  position: relative;
-  height: 6rem;
-  width: 6rem;
-}
-
-.soc svg {
-  height: 80%;
-  width: 80%;
-}
-
-.icon-13:hover,
-.icon-26:hover,
-.icon-17:hover {
-  border-radius: 100%;
-  color: rgba(109,123,255, 0.5);
-  fill: rgba(109,123,255, 0.5);
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
-  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
-  transition: background-color 0.5s, transform 0.5s ease-out;
-  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
-}
-
-.icon-13 {
-  color: #26d991;
-  fill: #26d991;
-}
-
-.icon-13:hover {
-  background: #26d991;
-}
-
-.icon-17 {
-  color: #eec273;
-  fill: #eec273;
-}
-
-.icon-17:hover {
-  background: #eec273;
-}
-
-.icon-26 {
-  color: #d926b5;
-  fill: #d926b5;
-}
-
-.icon-26:hover {
-  background: #d926b5;
-}
-
-
-/***************** Media Queries *********************/
-/* Override Bootstrap's default container width */
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-  .blog-title {
-    font-size: 50px;
-  }
-  .footer ul {
-  text-align: center;
-  padding-top: 10px;
-  }
-
-  .blog-title {
-    margin-top: 30px;
-  }
-  .blog-main {
-    font-size: 18px;
-    line-height: 1.5;
-    background: url('/homestead-instead/css/images/rainbowbackground.jpg');
-    border-radius: 3px;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 0;
-    min-height: 40px;
-  }
-  .blog-title {
-    font-size: 40px;
-    padding-top: 30px;
-  }
-  .blog-footer {
-    bottom: 0;
-  }
-  ul.soc {
-  margin-left: -20px;
-  margin-right: auto;
-  text-align: center;
-  }
-
-  .soc svg {
-    height: 100%;
-    width: 100%;
-  }
-}
