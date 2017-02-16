@@ -590,18 +590,26 @@ code {
     padding-top: 10px;
     padding-bottom: 10px;
   }*/
-  .navbar-nav li a {
-  color: #3effa7;
-  font-size: 30px;
-  padding-bottom: 15px;
-  line-height: 30px;
-}
+  .navbar-brand {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #ffb482;
+    margin-bottom: 3px;
+    line-height: 30px;
+    font-family: 'Pacifico', cursive;
+  }
 
-.navbar-nav li a:hover {
-  background-color: transparent;
-  color: #ff3e96;
-  cursor: pointer;
-}
+  a.navbar-brand:hover,
+  a.navbar-brand:focus{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none;
+  }
 
   /*** Turn the hamburger to an x ***/
 .navbar-toggle {
