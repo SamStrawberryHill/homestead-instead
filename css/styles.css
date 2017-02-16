@@ -586,11 +586,11 @@ code {
   #main-menu-navbar {
     margin-left: -30px;
   }
-  /*.navbar-nav>li>a {
+  .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
-  }*/
-  .navbar-brand {
+  }
+  .navbar-brand p {
     font-size: 30px;
     padding-bottom: 15px;
     color: #ffb482;
