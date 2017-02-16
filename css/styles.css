@@ -816,6 +816,9 @@ code {
   background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
   background: url('/homestead-instead/css/images/rainbowbackground.jpg');
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
