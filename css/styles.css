@@ -175,8 +175,8 @@ opacity: 1;
  line-height: 1.5;
  background: url('/homestead-instead/css/images/rainbowbackground.jpg');
  border-radius: 3px;
- margin: 5px 5px 5px;
 }
+
 .blog-main:hover {
  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
  text-decoration: none;
@@ -337,12 +337,7 @@ ul.soc {
   .blog-title {
    margin-top: 30px;
  }
-  .blog-main {
-   font-size: 18px;
-   line-height: 1.5;
-   background: url('/homestead-instead/css/images/rainbowbackground.jpg');
-  border-radius: 3px;
-}
+
 }
 
 @media (min-width: 768px) {
