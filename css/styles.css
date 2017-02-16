@@ -687,7 +687,7 @@ span.icon-bar {
   padding-bottom: 20px;
 }
 .blog-title {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-size: 35px;
   font-weight: normal;
@@ -708,6 +708,7 @@ span.icon-bar {
   line-height: 1.5;
   background: url('/homestead-instead/css/images/rainbowbackground.jpg');
   border-radius: 3px;
+  margin: 5px 5px 5px;
 }
 
 .blog-main:hover {
@@ -740,6 +741,7 @@ span.icon-bar {
   padding: 15px;
   background-color: rgba(109,123,255,0.9);
   border-radius: 4px;
+  margin: 5px 5px;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
@@ -968,6 +970,20 @@ ul.soc {
   .footer ul {
   text-align: center;
   padding-top: 10px;
+  }
+  .sidebar-module-inset {
+    padding: 15px;
+    background-color: rgba(109,123,255,0.9);
+    border-radius: 4px;
+  }
+  .blog-title {
+    margin-top: 30px;
+  }
+  .blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+    background: url('/homestead-instead/css/images/rainbowbackground.jpg');
+    border-radius: 3px;
   }
 }
 
